@@ -1,11 +1,11 @@
-@extends('layouts.master', ['title' => 'Produk'])
+@extends('layouts.backend.master', ['title' => 'Produk'])
 
 @section('content')
     <div class="page-header d-print-none">
         <div class="container-xl">
             <div class="row g-2 align-items-center">
                 <div class="col">
-                    <h2 class="page-title">Daftar Produk</h2>
+                    <h2 class="page-title">kelola Produk Perusahaan</h2>
                 </div>
                 <div class="col-12 col-md-auto ms-auto d-print-none">
                     <div class="d-flex">
@@ -29,7 +29,7 @@
         <div class="container-xl">
             <div class="row">
                 <div class="col-12">
-                    <form action="{{ route('admin.category.index') }}" method="GET">
+                    {{-- <form action="{{ route('admin.category.index') }}" method="GET">
                         <div class="input-icon mb-3">
                             <input type="text" class="form-control" placeholder="Cari Data...." name="search"
                                 value="">
@@ -43,7 +43,7 @@
                                 </svg>
                             </span>
                         </div>
-                    </form>
+                    </form> --}}
 
                     <div class="card rounded-lg border border-0">
                         <div class="card-body p-0">
@@ -132,8 +132,7 @@
                                                                                 Pilih Gambar Baru
                                                                             </label>
                                                                             <input type="file"
-                                                                                class="form-control d-none"
-                                                                                name="thumbnail"
+                                                                                class="form-control d-none" name="thumbnail"
                                                                                 id="thumbnail-input-{{ $product->id }}"
                                                                                 accept="image/*"
                                                                                 onchange="previewImage(this, 'thumbnail-preview-{{ $product->id }}')">

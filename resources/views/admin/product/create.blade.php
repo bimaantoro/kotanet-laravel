@@ -15,12 +15,12 @@
                             <form action="{{ route('admin.product.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-4">
-                                    <label for="product-name" class="form-label required">Nama Produk</label>
+                                    <label for="product-name" class="form-label fw-bold required">Nama Produk</label>
                                     <input type="text" class="form-control" id="product-name" name="name"
                                         placeholder="Masukkan nama produk" value="{{ old('name') }}">
                                 </div>
                                 <div class="mb-4">
-                                    <label class="form-label required d-block">Foto Produk</label>
+                                    <label class="form-label fw-bold required d-block">Foto Produk</label>
                                     <div class="d-flex align-items-center mb-2">
                                         <img src="https://fakeimg.pl/308x205/?text=Product&font=lexend"
                                             alt="Product thumbnail" id="thumbnail-preview" class="img-thumbnail me-3"
@@ -51,7 +51,7 @@
                                         diizinkan: JPG, JPEG, PNG.</small>
                                 </div>
                                 <div class="mb-4">
-                                    <label for="product-about" class="form-label required">Tentang Produk</label>
+                                    <label for="product-about" class="form-label fw-bold required">Tentang Produk</label>
                                     <textarea class="form-control" id="product-about" name="about" rows="5" placeholder="Deskripsikan produk Anda">{{ old('about') }}</textarea>
                                 </div>
                                 <div class="d-flex justify-content-between">

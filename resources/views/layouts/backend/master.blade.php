@@ -16,14 +16,14 @@
 <body>
     <div class="page">
         <!-- Navbar -->
-        @include('layouts._navbar')
+        @include('layouts.backend._navbar')
 
         <div class="page-wrapper">
             @yield('content')
 
 
             <!-- Footer -->
-            @include('layouts._footer')
+            @include('layouts.backend._footer')
         </div>
     </div>
 
