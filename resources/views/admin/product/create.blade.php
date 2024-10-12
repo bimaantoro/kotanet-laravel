@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title' => 'Tambah Produk'])
+@extends('layouts.backend.master', ['title' => 'Tambah Produk'])
 
 
 
@@ -47,7 +47,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <small class="text-muted">Unggah gambar dengan ukuran maksimal 2MB. Format yang
+                                    <small class="text-muted">Unggah gambar dengan ukuran maksimal 5MB. Format yang
                                         diizinkan: JPG, JPEG, PNG.</small>
                                 </div>
                                 <div class="mb-4">

@@ -1,4 +1,4 @@
-@extends('layouts.backend.master', ['title' => 'Tentang Perusahaan'])
+@extends('layouts.backend.master')
 
 @section('content')
     <div class="page-header d-print-none">

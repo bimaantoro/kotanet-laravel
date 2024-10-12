@@ -24,13 +24,13 @@ class ProductRequest extends FormRequest
         if (request()->isMethod('POST')) {
             $data = [
                 'name' => 'required',
-                'thumbnail' => 'required|image|mimes:png,jpg,jpeg|max:2048',
+                'thumbnail' => 'required|image|mimes:png,jpg,jpeg|max:5120',
                 'about' => 'required',
             ];
         } elseif (request()->isMethod('PUT')) {
             $data = [
                 'name' => 'required|string',
-                'thumbnail' => 'sometimes|image|mimes:png,jpg,jpeg|max:2048',
+                'thumbnail' => 'sometimes|image|mimes:png,jpg,jpeg|max:5120',
                 'about' => 'required|string'
             ];
         }

@@ -1,4 +1,4 @@
-@extends('layouts.master', ['title' => 'Tambah Informasi Perusahaan'])
+@extends('layouts.backend.master', ['title' => 'Tambah Informasi Perusahaan'])
 
 
 

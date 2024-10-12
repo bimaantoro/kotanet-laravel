@@ -1,4 +1,4 @@
-@extends('layouts.backend.master', ['title' => 'Produk'])
+@extends('layouts.backend.master')
 
 @section('content')
     <div class="page-header d-print-none">
@@ -67,7 +67,7 @@
                                                 <tr>
                                                     <td>{{ $i + $products->firstItem() }}</td>
                                                     <td>
-                                                        <img src="{{ asset('storage/' . $product->thumbnail) }}"
+                                                        <img src="{{ Storage::url($product->thumbnail) }}"
                                                             alt="{{ $product->name }}" class="img-thumbnail"
                                                             style="width: 100px; height: auto;">
                                                     </td>
@@ -105,7 +105,7 @@
                                                                     <label class="form-label d-block">Gambar
                                                                         Produk</label>
                                                                     <div class="d-flex align-items-center mb-2">
-                                                                        <img src="{{ asset('storage/' . $product->thumbnail) }}"
+                                                                        <img src="{{ Storage::url($product->thumbnail) }}"
                                                                             alt="Current thumbnail"
                                                                             id="thumbnail-preview-{{ $product->id }}"
                                                                             class="img-thumbnail me-3"
@@ -142,9 +142,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <small class="text-muted">Unggah gambar dengan ukuran
-                                                                        maksimal 2MB. Format yang diizinkan: JPG, JPEG,
-                                                                        PNG.</small>
+                                                                    <small class="text-muted">
+                                                                        Unggah gambar dengan ukuran maksimal 5MB. Format
+                                                                        yang diizinkan: JPG, JPEG, PNG.
+                                                                    </small>
                                                                 </div>
                                                                 <div class="mb-4">
                                                                     <label class="form-label"
